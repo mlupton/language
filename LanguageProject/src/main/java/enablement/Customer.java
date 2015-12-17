@@ -12,7 +12,7 @@ public class Customer implements java.io.Serializable
    private java.lang.String firstName;
    private java.lang.String lastName;
 
-   private enablement.Address addresss;
+   private enablement.Address address;
 
    public Customer()
    {
@@ -38,22 +38,22 @@ public class Customer implements java.io.Serializable
       this.lastName = lastName;
    }
 
-   public enablement.Address getAddresss()
+   public enablement.Address getAddress()
    {
-      return this.addresss;
+      return this.address;
    }
 
-   public void setAddresss(enablement.Address addresss)
+   public void setAddress(enablement.Address address)
    {
-      this.addresss = addresss;
+      this.address = address;
    }
 
    public Customer(java.lang.String firstName, java.lang.String lastName,
-         enablement.Address addresss)
+         enablement.Address address)
    {
       this.firstName = firstName;
       this.lastName = lastName;
-      this.addresss = addresss;
+      this.address = address;
    }
 
 }
