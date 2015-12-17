@@ -9,25 +9,78 @@ public class Address implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private java.lang.String stringData;
+   private java.lang.Integer num;
+
+   private java.lang.String street;
+
+   private java.lang.String city;
+
+   private java.lang.String state;
+
+   private java.lang.Integer zip;
 
    public Address()
    {
    }
 
-   public java.lang.String getStringData()
+   public java.lang.Integer getNum()
    {
-      return this.stringData;
+      return this.num;
    }
 
-   public void setStringData(java.lang.String stringData)
+   public void setNum(java.lang.Integer num)
    {
-      this.stringData = stringData;
+      this.num = num;
    }
 
-   public Address(java.lang.String stringData)
+   public java.lang.String getStreet()
    {
-      this.stringData = stringData;
+      return this.street;
+   }
+
+   public void setStreet(java.lang.String street)
+   {
+      this.street = street;
+   }
+
+   public java.lang.String getCity()
+   {
+      return this.city;
+   }
+
+   public void setCity(java.lang.String city)
+   {
+      this.city = city;
+   }
+
+   public java.lang.String getState()
+   {
+      return this.state;
+   }
+
+   public void setState(java.lang.String state)
+   {
+      this.state = state;
+   }
+
+   public java.lang.Integer getZip()
+   {
+      return this.zip;
+   }
+
+   public void setZip(java.lang.Integer zip)
+   {
+      this.zip = zip;
+   }
+
+   public Address(java.lang.Integer num, java.lang.String street,
+         java.lang.String city, java.lang.String state, java.lang.Integer zip)
+   {
+      this.num = num;
+      this.street = street;
+      this.city = city;
+      this.state = state;
+      this.zip = zip;
    }
 
 }
